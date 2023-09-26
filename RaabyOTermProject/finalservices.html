@@ -1,0 +1,173 @@
+<!Doctype HTML>
+
+<head>
+
+	<meta name="finalservices" content="Services Page">
+
+	<title> Services </title>
+	<link rel="stylesheet" href="finalwebsite.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+
+	<script async
+	src="https://js.stripe.com/v3/buy-button.js">
+</script>
+
+<script src='https://www.google.com/recaptcha/api.js'></script>
+
+<script type="text/javascript" src="servicejs.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Big+Shoulders+Display&display=swap" rel="stylesheet">
+
+
+<nav class="navbar navbar-expand-sm navbar-li" id="nav">
+	<div class = "container-fluid">
+		<div class ="navbar-header">
+			<a class = "navbar-brand" href='finalwebsite.html'>Raaby</a>
+		</div>
+		<ul class="nav navbar-nav">
+			<li class="nav-item"><a class="nav-link" href="finalwebsite.html">Home</a></li>
+			<li class="nav-item"><a class="nav-link" href="finalservices.html">Services</a></li>
+			<li class="nav-item"><a class="nav-link" href="finalshop.html">Shop</a></li>
+			<li class="nav-item"><a class="nav-link" href="FinalGallery.html">Projects</a></li>
+		</ul>
+	</div>
+</nav>
+<head>
+
+	<body>
+
+
+		<div class="welcome">
+			<h1 class="titles" style="font-size: 110px;"> Web Design Services </h1>
+		</div>
+
+		<div class="row">
+			<div class="col-6" style="float: left">
+				<iframe src="https://giphy.com/embed/QVUL20w0FwLKnQuX4D" width="480" height="379" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
+			</div>
+
+			<div class="col-6" style="float: right; padding-top: 20px; margin-right: 0px;">
+
+				<p class="description"> Are you looking to create a website for your business or personal use, or need to update the aesthetics of your current website? I offer an array of different web design services ranging from website creation to website maintainance </p>
+
+				<div class="row">
+					<form method="get" action="#services" class="col-3">
+						<button class="buttons"> Services </button>
+					</form>
+
+					<form method="get" action="#form" class="form-group" class="col-3">
+						<button class="buttons"> Interest Form </button>
+					</form>
+				</div>
+			</div>
+
+		</div>
+		<br>
+		<br>
+
+		<!-- displaying services and descriptions -->
+		<div class="row" id="services" >
+			<div class="col-4">
+
+				<div class="col actual">
+					<div>
+						<img style="height: 350px; width: 350px;" src="https://thumbs.dreamstime.com/b/business-startup-icon-start-new-business-beautiful-design-fully-editable-business-startup-icon-start-new-business-154368972.jpg">
+					</div>
+					<h1 class="titles" style="color: black; font-size: 40px"> Business </h1>
+					<p class="description" style="background-color: black; color: white;"> Create a website for your business that is designed to your needs!</p>
+				</div>
+			</div>
+
+			<div class="col-4">
+
+				<div class="col actual">
+					<div>
+						<img style="height:350px; width: 350px" src="https://static.vecteezy.com/system/resources/thumbnails/014/194/222/small_2x/avatar-icon-human-a-person-s-badge-social-media-profile-symbol-the-symbol-of-a-person-vector.jpg">
+					</div>
+					<h1 class="titles" style="color: black; font-size: 40px"> Personal </h1>
+					<p class="description" style="background-color: black; color: white;"> Create your personal portfolio with a website! </p>
+				</div>
+			</div>
+
+			<div class="col-4">
+
+				<div class="col actual">
+					<div>
+						<img style="height:310px; width: 310px; margin-bottom: 40px; margin: 20px" src="https://www.freeiconspng.com/uploads/maintenance-icon-14.png">
+					</div>
+					<h1  class="titles" style="color: black; font-size: 40px"> Maintainance </h1>
+					<p class="description" style="background-color: black; color: white;"> Receive help with updating certain feautures of your website!</p>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!-- service interest form -->
+		<div id="interest" style="height: 600px">
+			<h1 class="titles" style="color: black; font-size: 50px; text-align: left; margin-left: 200px; margin-top: 50px"> Service Interest Form </h1>
+
+			<form id="form" action="finalphp.php" method="POST" onsubmit="return checkform(this)">
+				<div class="form-group">
+					<div>
+						<label> First Name </label>
+					</div>
+					<!-- error message -->
+					<div class="errors" id="sfirsterror"> </div>
+					<input type="text" name="firstname" id="firstname" class="form-control">
+				</div>
+
+				<div class="form-group">
+					<div>
+						<label> Last Name </label>
+					</div>
+					<!-- error message -->
+					<div class="errors" id="slasterror"> </div>
+					<input type="text" name="lastname" id="lastname" class="form-control">
+				</div>
+
+				<div class="form-group">
+					<div>
+						<label> Email Address </label>
+					</div>
+					<!-- error message -->
+					<div class="errors" id="semailerror"> </div>
+					<input type="text" name="emailaddress" id="emailaddress" class="form-control">
+				</div>
+
+				<label> Service </label>
+				<div class="form-group">
+					<!-- error message -->
+					<div class="errors" id="sserviceerror"> </div>
+					<select name="service" class="form-control">
+						<!-- <input name="service" type="text" class="form-control"> -->
+						<option value="business"> Business Website </option>
+						<option value="personal"> Personal Website </option>
+						<option value="maintain"> Website Maintenance </option>
+					</select>
+				</div>
+				
+				
+				<!-- data is added to database when submit is clicked, form on shop page does data validation -->
+				<button type="submit" style="border: none; background-color: white; border-radius: 5px" onclick="serviceCheck()"> Submit </button>
+				<div id="success"></div>
+
+				
+			</form>
+			
+
+		</div>
+
+		<footer id="footer" class="row">
+			<p style="text-align: center; margin-top: 5px" class="col-5"> ® Raaby Omar 2023, All Rights Reserved </p>
+			<div class="col-1"> <img src="instaimg2.png" href="https://www.instagram.com/" class="socials"> </div>
+			<div class="col-1"> <img src="twitter3.jpeg" href="https://twitter.com/?lang=en" class="socials"> </div>
+			<div class="col-1"> <a href="https://www.linkedin.com" style="color: white"> <img src="linkedicon.png" class="socials"> </a> </div>
+		</footer>
+
+
+
+
+	</body>

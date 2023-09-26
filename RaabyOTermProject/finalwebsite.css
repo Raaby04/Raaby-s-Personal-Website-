@@ -1,0 +1,221 @@
+#body {
+
+}
+
+#nav {
+	background-color: #7EB4AA;
+}
+
+.nav-link {
+	color: black;
+}
+
+.navbar-brand {
+	color: white;
+}
+
+#title {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.welcome {
+	background-image: url("Holographic hi-ress backgrounds.jpg");
+	height: 330px;
+	width: 100%;
+	padding-top: 20px;
+	text-align:center;
+	color: white;
+}
+
+#name {
+	text-align:center;
+	color: white;
+	font-family: initial;
+	padding-top: 20px;
+}
+
+.titles {
+	font-family: 'Abril Fatface', cursive;
+	font-size: 130px;
+}
+
+#about {
+	height: 570px;
+	background-color: white;
+}
+
+#viddiv {
+	height: 570px;
+	background-color: #C3ABCB ;
+}
+
+#me {
+	width: 400px;
+	height: 480px;
+	padding: 20px;
+	margin-top: 80px;
+	margin-left: 50px
+}
+
+#video {
+	margin-top: 80px;
+	margin-left: 40px;
+}
+
+.description {
+	padding: 30px;
+	background-color: white;
+	border-radius: 15px;
+	font-size: 32px;
+	font-family: 'Big Shoulders Display', cursive; 
+}
+
+.buttons {
+	border: none;
+	border-radius: 5px;
+	background-color: #7EB4AA;
+	color: black;
+	padding: 15px;
+	margin: 15px;
+}
+
+#form {
+	background-color: #7EB4AA;
+	border-radius: 15px;
+	width: 1000px;
+	float: center;
+	padding: 100px;
+	padding-top: 30px;
+	height: 500px;
+	margin-left: 200px;
+
+}
+
+.actual {
+	height: 600px;
+	width: 200px;
+	padding: 50px;
+	padding-top: 0px;
+	background-color: white ;
+	margin: 30px;
+
+	border-radius: 20px;
+}
+
+#services {
+	
+	background-color: #C3ABCB;
+}
+
+#form-control {
+	width: 500px;
+}
+
+#inputs {
+	margin: 20px;
+}
+
+#interest {
+	height: 400px;
+}
+
+#footer {
+	height: 50px;
+	background-color: #7EB4AA;
+}
+
+.products {
+	height: 400px;
+	background-color: black ;
+	border: 3px solid #7EB4AA ;
+	
+}
+
+.pictures {
+	background-color: purple;
+}
+
+.names {
+	margin-left: 0px;
+	margin-right: 330px;
+	font-size: 40px;
+	color: #C3ABCB;
+	float: left;
+	padding: 20px;
+	border-radius: 15px;
+	font-family: 'Abril Fatface', cursive;
+}
+
+.listofinfo {
+	color: white;
+	font-size: 35px;
+	font-family: 'Big Shoulders Display', cursive; 
+	margin-left: 20px;
+}
+
+#checkout {
+	background-color: #e3e3e3;
+	padding: 20px;
+	margin-right: 40px;
+	
+}
+
+#shopform {
+	height: 500px;
+	background-color: #C3ABCB;
+	padding: 20px;
+	border-radius: 15px;
+}
+
+#wackimg {
+	height: 300px;
+	width: 350px;
+	margin: 40px;
+}
+
+#schoolimg {
+	height: 300px;
+	width: 450px;
+	margin: 40px;
+}
+
+#personalimg {
+	height: 300px;
+	width: 350px;
+	margin: 40px;
+}
+
+#bigsister {
+	height: 300px;
+	width: 450px;
+	margin: 40px;
+}
+
+.socials {
+	height: 30px;
+	width: 30px;
+	margin-top: 5px;
+}
+
+.errors {
+	color: red;
+	font-size: 10px;
+}
+
+.gallery {
+	padding: 5px;
+	background-color: #C3ABCB;
+	border-radius: 20px;
+	margin: 20px;
+	margin-left: 100px;
+	width: 30%;
+}
+
+.gallimg {
+	margin: 50px;
+}
+
+
+
+
